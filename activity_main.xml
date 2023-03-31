@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:id="@+id/skelet"
+        android:layout_width="421dp"
+        android:layout_height="739dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="-4dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="86dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:background="@color/black"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text="Chats"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <ImageView
+        android:id="@+id/marcusholloway"
+        android:layout_width="47dp"
+        android:layout_height="42dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/marcusholloway"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <View
+        android:id="@+id/take_a_photo_background"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        app:layout_constraintStart_toStartOf="@+id/takePhoto"
+        tools:layout_editor_absoluteY="36dp" />
+
+
+    <ImageView
+        android:id="@+id/takePhoto"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/image2"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="337dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <View
+        android:id="@+id/make_a_history_background"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <ImageView
+        android:id="@+id/makeHistory"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/camera"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <View
+        android:id="@+id/searchInput"
+        android:layout_width="385dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <TextView
+        android:id="@+id/textSearch"
+        android:layout_width="79dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text="Search"
+        android:textColor="@color/silver"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <ImageView
+        android:id="@+id/s"
+        android:layout_width="36dp"
+        android:layout_height="33dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/s"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <View
+        android:id="@+id/historyBar"
+        android:layout_width="420dp"
+        android:layout_height="78dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <ImageView
+        android:id="@+id/addHistoryIcon"
+        android:layout_width="48dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/pl"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        app:layout_constraintStart_toStartOf="@+id/historyBar"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <TextView
+        android:id="@+id/textfrHis1"
+        android:layout_width="61dp"
+        android:layout_height="23dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text="ренч"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/onlineHistoryFriend"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <ImageView
+        android:id="@+id/friendHistoryViev"
+        android:layout_width="80dp"
+        android:layout_height="49dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/ranch"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <TextView
+        android:id="@+id/textfrHis0"
+        android:layout_width="64dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text="Your History"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <ImageView
+        android:id="@+id/friendHistoryViev2"
+        android:layout_width="78dp"
+        android:layout_height="49dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/r"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <TextView
+        android:id="@+id/textfrHis2"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text="Рей"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <ImageView
+        android:id="@+id/friendHistoryViev3"
+        android:layout_width="83dp"
+        android:layout_height="46dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/sq"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <TextView
+        android:id="@+id/textfrHis3"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text="Сем"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="274dp"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <ImageView
+        android:id="@+id/friendHistoryViev4"
+        android:layout_width="78dp"
+        android:layout_height="47dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/e"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="353dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <TextView
+        android:id="@+id/textfrHis4"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text="Ецео"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="370dp"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <ImageView
+        android:id="@+id/onlineHistoryFriend"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/o"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <ImageView
+        android:id="@+id/onlineHistoryFriend2"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/o"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <ImageView
+        android:id="@+id/onlineHistoryFriend3"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/o"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <View
+        android:id="@+id/chatfrbar"
+        android:layout_width="418dp"
+        android:layout_height="497dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <View
+        android:id="@+id/chat1"
+        android:layout_width="414dp"
+        android:layout_height="85dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="243dp" />
+
+    <ImageView
+        android:id="@+id/fravatarchat"
+        android:layout_width="79dp"
+        android:layout_height="69dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/ranch"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="252dp" />
+
+    <TextView
+        android:id="@+id/textnamechat1"
+        android:layout_width="240dp"
+        android:layout_height="27dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text="ренч"
+        android:textColor="@color/silver"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="252dp" />
+
+    <TextView
+        android:id="@+id/textmsgchat1"
+        android:layout_width="230dp"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text=" я друг иаркуса
+"
+        android:textColor="@color/silver"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="294dp" />
+
+    <View
+        android:id="@+id/chat2"
+        android:layout_width="420dp"
+        android:layout_height="85dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="342dp" />
+
+    <ImageView
+        android:id="@+id/fravatarchat1"
+        android:layout_width="79dp"
+        android:layout_height="69dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/r"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="351dp"
+
+        />
+
+
+    <View
+        android:id="@+id/chat3"
+        android:layout_width="420dp"
+        android:layout_height="83dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+
+    <ImageView
+        android:id="@+id/fravatarchat3"
+        android:layout_width="79dp"
+        android:layout_height="69dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/sq"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
+        android:id="@+id/textnamechat3"
+        android:layout_width="240dp"
+        android:layout_height="27dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text="Рей кені"
+        android:textColor="@color/silver"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="352dp" />
+
+
+    <TextView
+        android:id="@+id/textmsgchat3"
+        android:layout_width="305dp"
+        android:layout_height="31dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text=" я спасав світ"
+        android:textColor="@color/silver"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="485dp" />
+
+    <TextView
+        android:id="@+id/textnamechat2"
+        android:layout_width="240dp"
+        android:layout_height="27dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text="Сем фішер"
+        android:textColor="@color/silver"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
+        android:id="@+id/textmsgchat2"
+        android:layout_width="305dp"
+        android:layout_height="31dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text=" Я хакнув blume "
+        android:textColor="@color/silver"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="389dp" />
+
+    <View
+        android:id="@+id/adds"
+        android:layout_width="420dp"
+        android:layout_height="83dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="536dp" />
+
+    <ImageView
+        android:id="@+id/fravatarchatadds"
+        android:layout_width="79dp"
+        android:layout_height="69dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/wd"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <TextView
+        android:id="@+id/textmsgchatadds"
+        android:layout_width="305dp"
+        android:layout_height="31dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text=" wd top! "
+        android:textColor="@color/silver"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <TextView
+        android:id="@+id/textmsgchataddscommentar"
+        android:layout_width="305dp"
+        android:layout_height="31dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text="  Ейден: Купляйте воч догс!"
+        android:textColor="@color/silver"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="576dp" />
+
+    <TextView
+        android:id="@+id/textmsgchataddscommentarpos"
+        android:layout_width="246dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text="  View more"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="595dp" />
+
+
+
+    <View
+        android:id="@+id/footer"
+        android:layout_width="417dp"
+        android:layout_height="93dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/stgray"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="640dp" />
+
+    <ImageView
+        android:id="@+id/chaticon"
+        android:layout_width="58dp"
+        android:layout_height="41dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/m"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="674dp" />
+
+    <ImageView
+        android:id="@+id/ppls"
+        android:layout_width="58dp"
+        android:layout_height="41dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/f"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="654dp" />
+
+    <ImageView
+        android:id="@+id/pplsindicator"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/o"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="645dp" />
+
+    <TextView
+        android:id="@+id/textpplsindc"
+        android:layout_width="43dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:text="  3"
+        android:textColor="@color/silver"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="645dp" />
+
+    <ImageView
+        android:id="@+id/cmps"
+        android:layout_width="60dp"
+        android:layout_height="41dp"
+        android:width="40dp"
+        android:height="40dp"
+        android:src="@drawable/c"
+        android:viewportWidth="40"
+        android:viewportHeight="40"
+        tools:layout_editor_absoluteX="335dp"
+        tools:layout_editor_absoluteY="674dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
